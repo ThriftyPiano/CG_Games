@@ -2,6 +2,8 @@
 
 A collection of browser-based interactive applications built with Processing.js, covering games, simulations, computer graphics, and algorithmic visualizations.
 
+Link: [Github Page](https://thriftypiano.github.io/CG_Games/index.html)
+
 ## Overview
 
 This repository contains over 70 interactive web applications demonstrating various concepts in computer science, mathematics, and physics. All projects run directly in the browser and are built using Processing.js for graphics rendering and mathematical computations. These are ported from Khanacademy where I originally wrote most of the code.
