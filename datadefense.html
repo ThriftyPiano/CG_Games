@@ -5341,12 +5341,14 @@ var winnersButtons = [{
         switchScene('Info');
     }
 }, ];
-var won = ['Animator101: "Subscribe to Animator101! https://www.khanacademy.org/computer-programming/-/6305847543906304"', 'Electric Dolphin: "Remember: Eat breakfast, lunch, and dinner"', 'macraerandall: "I won! FINALLY. it took me upwards of 38 hours."', 'Gilded: "I love procrastinating :D - Oct 24 2024 (Took 13 Hours)"', 'SnowyMountain: "IS THAT HYPERPIGMENTATION"', 'Nathl Macmc: "that\'s a problem for future me to deal with"', 'Kyle Liao: "procrastination is the crown of all virtues"', 'Ralph: "Never put off till today what you can do tomorrow"', 'ThriftyPiano: "after two years, i finally beat my own game!"'];
+var won = ['Animator101: "Subscribe to Animator101! https://www.khanacademy.org/computer-programming/-/6305847543906304"', 'Electric Dolphin: "Remember: Eat breakfast, lunch, and dinner"', 'macraerandall: "I won! FINALLY. it took me upwards of 38 hours."', 'Gilded: "I love procrastinating :D - Oct 24 2024 (Took 13 Hours)"', 'SnowyMountain: "IS THAT HYPERPIGMENTATION"', 'Nathl Macmc: "that\'s a problem for future me to deal with"', 'Kyle Liao: "procrastination is the crown of all virtues"', 'Ralph: "Never put off till today what you can do tomorrow"', 'ThriftyPiano: "after two years, i finally beat my own game!"', 'bisonenrager: "It was a long journey but i dit it whit the help of a auto clicker - june 18 2026 (I don\'t know the time it took but i know i started on june 15 2026)"'];
 var showWinners = function() {
-    var winnersText = '';
+    var winnersText = '> ';
     for (var i = 0; i < won.length; i++) {
         winnersText += won[i];
-        winnersText += '\n';
+        if (i < won.length-1) {
+            winnersText += '\n> ';
+        }
     }
     textAlign(LEFT, TOP);
     textSize(15);
